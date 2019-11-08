@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d0639b22069444b3ab25b34bba537ffe" Name="Diagram1">
+        <EntityTypeShape EntityType="UltimusDBModel.GROUP" Width="1.5" PointX="5.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.INCIDENT" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.INCIDENTS_ARCHIVE" Width="1.5" PointX="10.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.INCIDENTS_BAK" Width="1.5" PointX="10.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.PROCESSCONFIGURATION" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.PROCESS" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.PROCESSSTEP" Width="1.5" PointX="5.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.REPORTSRIGHT" Width="1.5" PointX="7.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.SERVERPREFERENCE" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.STEPACTIVATIONID" Width="1.5" PointX="12.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.STEPACTIVATIONSYNC" Width="1.5" PointX="12.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.StudioConfig_Domains" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.StudioConfig_LDAPDomains" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.StudioConfig_Repositories" Width="1.5" PointX="14.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.StudioConfig_Servers" Width="1.5" PointX="14.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.StudioConfig_UserRepositories" Width="1.5" PointX="14.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.StudioConfig_Users" Width="1.5" PointX="9.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.StudioConfig_UserServers" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.SUBPROC" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.T_BPM_AWOKE_SET" Width="1.5" PointX="2.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.T_BPM_PRC_APPROVAL" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.T_BPM_PRC_RGT" Width="1.5" PointX="16.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.T_BPM_PRCCLASS_LINK" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.T_BPM_PROCESSCLASS" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.T_BPM_PROCESSCLASS_C_USER" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.T_BPM_PROCESSCLASS_RIGHT_LINK" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.T_BPM_READ_KNOW" Width="1.5" PointX="11.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.T_BPM_SYSTEM_SET" Width="1.5" PointX="16.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.T_BPM_TASK_AUTOASSIGNED" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.TASKQUEUE" Width="1.5" PointX="13.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.TASK" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.TASKS_ARCHIVE" Width="1.5" PointX="4.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.TASKS_BAK" Width="1.5" PointX="6.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.ULTIMUSREPALERT" Width="1.5" PointX="18.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.ULTIMUSREPORT" Width="1.5" PointX="8.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.ULTVIEW" Width="1.5" PointX="5.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.VIEWFOLDER" Width="1.5" PointX="18.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.FILTER" Width="1.5" PointX="18.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.LOGACTION" Width="1.5" PointX="18.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.LOGACTIONS_ARCHIVE" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.LOGACTIONS_BAK" Width="1.5" PointX="20.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.LOGEVENT" Width="1.5" PointX="20.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.LOGEVENTS_ARCHIVE" Width="1.5" PointX="20.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.LOGEVENTS_BAK" Width="1.5" PointX="15.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.MEMBER" Width="1.5" PointX="8" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.PROCESSACCESSRIGHT" Width="1.5" PointX="20.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.StudioConfig_AccessRights" Width="1.5" PointX="8.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.TRUSTEDUSER" Width="1.5" PointX="8" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UltimusDBModel.USERSERVERPREFERENCE" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="UltimusDBModel.FK_MEMBERS_GROUPS" ManuallyRouted="false" />
+        <AssociationConnector Association="UltimusDBModel.FK__USERSERVE__SERVE__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="UltimusDBModel.FK_CLASS" ManuallyRouted="false" />
+        <AssociationConnector Association="UltimusDBModel.FK" ManuallyRouted="false" />
+        <AssociationConnector Association="UltimusDBModel.FK_PRCCLASS" ManuallyRouted="false" />
+        <AssociationConnector Association="UltimusDBModel.FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="UltimusDBModel.FK_VIEWID_TRUSTEDUSERS" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

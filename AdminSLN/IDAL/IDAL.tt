@@ -1,0 +1,37 @@
+﻿<#@ template language="C#" debug="false" hostspecific="true"#>
+<#@ include file="EF6.Utility.CS.ttinclude"#><#@ 
+ output extension=".cs"#><#
+    const string inputFile = @"../Model/UltimusDB.edmx";
+var textTransform = DynamicTextTransformation.Create(this);
+var code = new CodeGenerationTools(this);
+var ef = new MetadataTools(this);
+var fileManager = EntityFrameworkTemplateFileManager.Create(this);
+EdmMetadataLoader loader=new EdmMetadataLoader(textTransform.Host, textTransform.Errors);
+EdmItemCollection itemCollection = (EdmItemCollection)loader.CreateEdmItemCollection(inputFile);
+    //itemCollection.CreateEdmItemCollection(inputFile);
+    
+#>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace IDAL
+{
+<#
+    foreach(EntityType entity in itemCollection.GetItems<EntityType>().OrderBy(e => e.Name))
+        {
+ #>
+    public partial interface I<#=entity.Name#>DAL : IBaseDAL<Model.<#=entity.Name#>>
+    {
+    }
+<#}#>
+}
+<#+ 
+public static void ArgumentNotNull<T>(T arg, string name) where T : class
+{
+    if (arg == null)
+    {
+        throw new ArgumentNullException(name);
+    }
+}
+#>

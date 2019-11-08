@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{318D4954-F5C0-4BB7-9727-662034273FD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FILTER.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GROUP.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="INCIDENT.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="INCIDENTS_ARCHIVE.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="INCIDENTS_BAK.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOGACTION.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOGACTIONS_ARCHIVE.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOGACTIONS_BAK.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOGEVENT.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOGEVENTS_ARCHIVE.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOGEVENTS_BAK.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MEMBER.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PROCESS.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PROCESSACCESSRIGHT.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PROCESSCONFIGURATION.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PROCESSSTEP.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REPORTSRIGHT.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SERVERPREFERENCE.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEPACTIVATIONID.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STEPACTIVATIONSYNC.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudioConfig_AccessRights.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudioConfig_Domains.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudioConfig_LDAPDomains.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudioConfig_Repositories.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudioConfig_Servers.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudioConfig_UserRepositories.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudioConfig_Users.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudioConfig_UserServers.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SUBPROC.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TASK.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TASKQUEUE.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TASKS_ARCHIVE.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TASKS_BAK.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRUSTEDUSER.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_BPM_AWOKE_SET.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_BPM_PRCCLASS_LINK.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_BPM_PRC_APPROVAL.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_BPM_PRC_RGT.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_BPM_PROCESSCLASS.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_BPM_PROCESSCLASS_C_USER.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_BPM_PROCESSCLASS_RIGHT_LINK.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_BPM_READ_KNOW.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_BPM_SYSTEM_SET.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_BPM_TASK_AUTOASSIGNED.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UltimusDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UltimusDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UltimusDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UltimusDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UltimusDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ULTIMUSREPALERT.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ULTIMUSREPORT.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ULTVIEW.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USERSERVERPREFERENCE.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWFOLDER.cs">
+      <DependentUpon>UltimusDB.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="UltimusDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>UltimusDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="UltimusDB.edmx.diagram">
+      <DependentUpon>UltimusDB.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UltimusDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UltimusDB.edmx</DependentUpon>
+      <LastGenOutput>UltimusDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="UltimusDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UltimusDB.edmx</DependentUpon>
+      <LastGenOutput>UltimusDB.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
