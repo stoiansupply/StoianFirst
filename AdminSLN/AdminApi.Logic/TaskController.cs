@@ -7,7 +7,6 @@ using Model;
 namespace AdminApi.Logic
 {
     public class TaskController : ApiController
-    {
-        
+    {        
     }
 }
